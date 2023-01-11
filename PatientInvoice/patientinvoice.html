@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./patientinvoice.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Patient Invoice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">RE857309</h1>
+        <div class="invoiceDetails">
+          <div>
+            <p>Patient's Name: <span class="bold">Obi Zyte</span></p>
+            <p>Patient's ID: <span class="bold">F8734508453</span></p>
+            <p>Tel: <span class="bold">08023451876</span></p>
+          </div>
+          <div>
+            <p>Invoice Number: <span class="bold">RE857309</span></p>
+            <p>Physican's name: <span class="bold"> Dr Eudy</span></p>
+            <p>Date:<span class="bold"> 20th May 2022</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- INVOICE TABLE -->
+
+      <div class="invoiceTable">
+        <h2>Payment Items</h2>
+        <div class="cardContainer">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">S/N</th>
+                <th scope="col">Item</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Chloroquine Phosphate</td>
+                <td>&#8358;4,000</td>
+                <td>x1</td>
+                <td>&#8358;4,000.00</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>"Full Blood Count (FBC) RBC,WBC,Platet count"</td>
+                <td>&#8358;4,000</td>
+                <td>x1</td>
+                <td>&#8358;4,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>HIV Screening</td>
+                <td>&#8358;1,500</td>
+                <td>x1</td>
+                <td>&#8358;1,500.00</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Chloroquine Phosphate</td>
+                <td>&#8358;4,000</td>
+                <td>x1</td>
+                <td>&#8358;4,000.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="subTotal">
+            <span>Subtotal:</span>
+            <span
+              ><span class="subTotalValue padding"
+                >&#8358;16,000.00</span
+              ></span
+            >
+          </div>
+        </div>
+
+        <div class="footer discount">
+          <span>Discount Amount:</span>
+          <span class="red discountPadding"
+            >&#8358;0</span
+          >
+        </div>
+        <div class="footer total">
+          <span>Grand Total:</span>
+          <span class="totalValue totalPadding"
+            >&#8358;16,640.00</span
+          >
+        </div>
+        <button class="paybtn">Make payment</button>
+      </div>
+    </div>
+  </body>
+</html>
